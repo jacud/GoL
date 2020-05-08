@@ -1,0 +1,53 @@
+﻿<Window x:Class="GoL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:controls="clr-namespace:GoL.Core.Controls.Views;assembly=GoL.Core"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviors="clr-namespace:GoL.ViewModel.Behaviors"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="MinWidth" Value="100" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="New Universe" Command="{Binding CreateUniverseCommand}"/>
+                <MenuItem Header="Open" Command="{Binding OpenFileCommand}"/>
+                <Separator />
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Life">
+                <MenuItem Header="Start" Command="{Binding StartGameCommand}" />
+                <MenuItem Header="Stop" Command="{Binding StopGameCommand}" />
+            </MenuItem>
+        </Menu>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" Grid.Row="1">
+            <controls:PopulationGridView 
+                GenerationGrid="{Binding Game.CurrentGeneration, 
+                                 Mode=OneWay, 
+                                 UpdateSourceTrigger=PropertyChanged}" 
+                Background="Black"/>
+            <i:Interaction.Behaviors>
+                <behaviors:GridScrollViewerBehavior/>
+            </i:Interaction.Behaviors>
+        </ScrollViewer>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="2">
+            <Button Command="{Binding StartGameCommand}" Content="Start"/>
+            <Button Command="{Binding StopGameCommand}" Content="Stop"/>
+            <Button Command="{Binding RewindBackCommand}" Content="Rewind back"/>
+            <Button Command="{Binding RewindForwardCommand}" Content="Rewind forward"/>
+            <TextBlock VerticalAlignment="Center" Margin="3,0" >
+                Generation:
+                <Run Text="{Binding Game.CurrentGenerationIndex, FallbackValue=0}" />
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\Gol.Core.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\Gol.Core.pdb
+C:\sources\VS2013\GoL\Gol.Core\obj\Debug\Gol.Core.dll
+C:\sources\VS2013\GoL\Gol.Core\obj\Debug\Gol.Core.pdb
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\System.Windows.Interactivity.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\sources\VS2013\GoL\Gol.Core\obj\Debug\GoL.Core.csprojResolveAssemblyReference.cache
